@@ -1,0 +1,10 @@
+<html>
+	<head>
+		<title>Left Frame</title>
+	</head>
+	<body bgcolor = "yellow">
+		<a href="f31.html" target="rightFrame">
+			<h2 align="center">MCA</h2>
+		</a>
+	</body>
+</html>

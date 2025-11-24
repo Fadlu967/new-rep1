@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script>
+			function add(A, B){
+				let result = A + B;
+				document.write("Result is ",result);
+			}
+		</script>
+	</head>
+	<body>
+		<h2>A = 5</h2>
+		<h2>B = 7</h2>
+		<input type="button" value="Add" onclick="add(5,7)">
+	</body>
+</html>

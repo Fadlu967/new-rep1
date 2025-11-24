@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+    body {
+        background: lightyellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        color: navy;
+        margin: 20px 0;
+    }
+    form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 500px;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 15px;
+    }
+    input, textarea, select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .gender-group { 
+		display: flex; 
+		gap: 20px;
+		align-items: center; 
+	}
+    label { 
+		display: flex; 
+		align-items: center; 
+		gap: 6px; 
+	}
+    .lang-column {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start; 
+    }
+    fieldset {
+        grid-column: span 2;
+        border-radius: 5px;
+        padding: 10px 15px;
+    }
+    .btn-row {
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type=submit], button {
+        width: 48%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    input[type=submit] { background: blue; }
+    input[type=submit]:hover { background: #45a049; }
+    button { background: #f44336; }
+    button:hover { background: #e53935; }
+</style>
+</head>
+
+<body>
+<h1>Registration Form</h1>
+
+<form>
+    <label>Name :</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Gender :</label>
+    <div class="gender-group">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Others</label>
+    </div>
+
+    <label>E-mail :</label>
+    <input type="email" placeholder="example@gmail.com">
+
+    <label>Password :</label>
+    <input type="password" placeholder="Password">
+
+    <label>Mobile No :</label>
+    <input type="text" maxlength="10" pattern="\d{10}" placeholder="Enter phone number">
+
+    <label>Address :</label>
+    <textarea></textarea>
+
+    <label>DoB :</label>
+    <input type="date">
+
+    <label>Nationality :</label>
+    <select>
+        <option>Indian</option><option>SriLankan</option>
+        <option>Russian</option><option>Australian</option>
+    </select>
+
+    <fieldset>
+        <legend>Languages known</legend>
+        <div class="lang-column">
+            <label><input type="checkbox"> Malayalam</label>
+            <label><input type="checkbox"> English</label>
+            <label><input type="checkbox"> Arabic</label>
+            <label><input type="checkbox"> Hindi</label>
+        </div>
+    </fieldset>
+
+    <div class="btn-row">
+        <input type="submit" value="Submit">
+        <button type="button">Cancel</button>
+    </div>
+</form>
+</body>
+</html>

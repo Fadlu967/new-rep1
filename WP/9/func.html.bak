@@ -1,0 +1,51 @@
+<html>
+<head></head>
+<style>
+	body{
+		background-color:lightyellow;
+		text-align:center;
+	}
+	.box{
+		background-color:white;
+		width:300px;
+		padding:20px;
+		margin:20px auto;
+		border-radius:10px;
+		box-shadow:0 0 10px rgba(0,0,0,0.1);
+		text-align:left;
+	}
+	h1{
+		text-align:center;
+	}
+</style>
+<body>
+	<h1>String Functions</h1>
+	<div class="box">
+	<script>
+		let s1 = "javascript"
+		
+		document.writeln("String  : ", s1, "<br>")
+		document.writeln("Slice()  : ", s1.slice(0, -6), "<br>")
+		document.writeln("Substr()  : ", s1.substr(4, 10),"<br>")
+		document.writeln("Replace() : ", s1.replace("java","J"),"<br>")
+		document.writeln("indexof(s) is : ", s1.indexOf("s"),"<br>")
+		document.writeln("charAt(3) : ", s1.charAt(3) , "<br>")
+		
+		let s2 = s1.toUpperCase()
+		document.writeln("toUpperCase() : ", s2, "<br>")
+	</script>
+	<div>
+	
+	<h1>Math Functions</h1>
+	<div class="box">
+	<script>
+		document.writeln("Square root of 25 is : ", Math.sqrt(25), "<br>")
+		document.writeln("Value of PI is : ", Math.PI,"<br>")
+		document.writeln("Minimum of 5, 0, 10 and 15 is : ", Math.min(5,0,10,15), "<br>")
+		document.writeln("Maximum of 5, 0, 10 and 15 is : ", Math.max(5,0,10,15), "<br>")
+		document.writeln("Rounded value of 19.7 is : ", Math.round(19.7), "<br>")
+		document.writeln("Random number is : ", Math.random(), "<br>")
+	</script>
+	<div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            background: lightyellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: navy;
+            margin-bottom: 20px;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type=submit], button {
+            margin-top: 15px;
+            width: 48%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type=submit] {
+            background: blue;
+            color: white;
+        }
+        button {
+            background: #f44336;
+            color: white;
+        }
+        input[type=submit]:hover {
+            background: #45a049;
+        }
+        button:hover {
+            background: #e53935;
+        }
+    </style>
+
+    <script>
+        function validation(event) {
+            event.preventDefault();
+
+            let name1 = document.getElementById("name").value;
+            if (name1 == "") {
+                alert("Enter your name");
+                return false;
+            }
+
+            let pas = document.getElementById("pass").value;
+            if (pas == "") {
+                alert("Enter the password");
+                return false;
+            }
+            if (pas.length < 8) {
+                alert("Password requires at least 8 characters");
+                return false;
+            }
+
+            let confirm = document.getElementById("cpass").value;
+            if (confirm != pas) {
+                alert("Re-enter same password");
+                return false;
+            }
+
+            let mob = document.getElementById("mobile").value;
+            if (mob == "") {
+                alert("Enter the mobile number");
+                return false;
+            }
+
+            let mobilePattern = /^\d{10}$/;
+            if (!mobilePattern.test(mob)) {
+                alert("Please enter a valid 10-digit mobile number (digits only)");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            event.target.submit();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="validation(event)">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Name"><br><br>
+
+        <label>Password:</label>
+        <input type="password" id="pass" placeholder="Password"><br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" id="cpass" placeholder="Confirm Password"><br><br>
+
+        <label>Mobile No:</label>
+        <input type="text" id="mobile" placeholder="Enter phone number"><br><br>
+
+        <input type="submit" value="Submit">
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>

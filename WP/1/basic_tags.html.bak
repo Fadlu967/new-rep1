@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Basic HTML Page</title>
+	</head>
+	<body>
+	
+		<center><h1>Welcome to Webpage</h1></center>
+		
+		<center><img src="html1.png"></center>
+		
+		<u><h2>About Page</h2></u>
+		<p>This is a new webpage with <b>basic html tags.</b>Basic tags like <i>html, head, title, body, 	   
+		text formatting tags, list tags and table tags</i> are used to create this page.</p>			   
+		
+		<u><h2>List Tags that are Used</h2></u>
+		<ol>
+		<li>ol</li>
+		<li>ul</li>
+		<li>li</li>
+		</ol>
+		
+		<u><h2>Table Tags that are Used</h2></u>
+		<ul>
+		<li>table</li>
+		<li>tr</li>
+		<li>th</li>
+		<li>td</li>
+		</ul>
+		
+		<table border=1>
+		<tr>
+		<th>Normal Tags</th>
+		<th>List Tags</th>
+		<th>Table Tags</th>
+		</tr>
+		<tr>
+		<td>body</td>
+		<td>ol</td>
+		<td>tr</td>
+		</tr>
+		<tr>
+		<td>head</td>
+		<td>ul</td>
+		<td>th</td>
+		</tr>
+		<tr>
+		<td>title</td>
+		<td>li</td>
+		<td>td</td>
+		</tr>
+		</table>
+		
+	</body>
+</html>

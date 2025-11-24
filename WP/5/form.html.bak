@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<title>Form</title>
+		<style>
+		body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #004aad;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 400px;
+            margin: 30px auto;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 220px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 60px;
+            resize: none;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #004aad;
+        }
+
+        input[type="submit"],
+        button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #004aad;
+            color: white;
+        }
+
+        button {
+            background-color: #ccc;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003580;
+        }
+
+        button:hover {
+            background-color: #999;
+        }
+
+        br {
+            line-height: 1.5;
+        }
+		</style>
+	</head>
+	<body>
+	<center>
+		<h1>Registration Form</h1>
+	</center>
+		<form>
+			<label>Name : </label>
+			<input type="text" placeholder="Enter your name"> <br> <br>
+			
+			<label>Gender : </label>
+			<input type="radio" name="gender">
+			<label>Male</label>
+			<input type="radio" name="gender">
+			<label>Female</label>
+			<input type="radio" name="gender">
+			<label>Others</label> <br> <br>
+			
+			<label>E-mail : </label>
+			<input type="email" placeholder="example@gmail.com"> <br> <br>
+			
+			<label>Password : </label>
+			<input type="password" placeholder="Password"> <br> <br>
+			
+			<label>Mobile No : </label>
+			<input type="text" maxlength="10" pattern="\d{10}" placeholder="Enter phone number"> <br> <br>
+			
+			<label>Address : </label>
+			<textarea> </textarea><br> <br>
+			
+			<label>DoB : </label>
+			<input type="date"> <br> <br>
+			
+			<label>Nationality : </label>
+			<select>
+				<option>Indian</option>
+				<option>SriLankan</option>
+				<option>Russian</option>
+				<option>Australian</option>
+			</select> <br> <br>
+			
+			<fieldset>
+			<legend>Languages known </legend> <br>
+			<table>
+			<tr><td>
+			<input type="checkbox">Malayalam <br>
+			<input type="checkbox">English <br>
+			<input type="checkbox">Arabic <br>
+			<input type="checkbox">Hindi <br> <br>
+			</tr></td>
+			</table>
+			</fieldset>
+
+			<input type="submit">
+			<button>Cancel</button>
+		</form>
+	<body>
+</html>
